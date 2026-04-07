@@ -1,0 +1,9 @@
+tools:
+  - class_name: verl.tools.bfcl_tool.BFCLTool
+    config:
+      rate_limit: 120
+      timeout: 120
+      type: bfcl
+    mcp:
+      # Use the repo-local verbose schema for train-test alignment.
+      tool_schema_path: ${oc.env:REPO_ROOT}/environment/booking_api.json
